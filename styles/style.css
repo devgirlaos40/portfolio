@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-:root{
+:root {
     --cor--background: #111111;
     --cor--textos: #F6F6F6;
     --cor--destaque: #FD22B3;
@@ -11,57 +11,58 @@
     --font--textos: 'Montserrat', sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: var(--cor--background);
     color: var(--cor--textos);
-} 
-
-.cabecalho__menu{
-    display: flex;
-    gap: 3.75rem;
-    padding: 6% 0% 0% 16%;
 }
 
-.cabecalho__menu__item{
+.cabecalho__menu {
+    display: flex;
+    gap: 3.75rem;
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho__menu__item {
     text-decoration: none;
     font-family: var(--font--titulos);
     color: var(--cor--destaque--secundaria);
     font-size: 1.5rem;
 }
 
-.apresentacao{
-    padding: 5% 15%;
+.apresentacao {
+    padding: 3% 15%;
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
     gap: 80px;
 }
 
-.apresentacao__conteudo{
+.apresentacao__conteudo {
     width: 50%;
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
 }
 
-.apresentacao__conteudo__titulo{
+.apresentacao__conteudo__titulo {
     font-family: var(--font--titulos);
-    font: size 1.95rem;
+    font-size: 1.95rem;
 }
 
-.apresentacao__conteudo__destaque{
+.apresentacao__conteudo__destaque {
     color: var(--cor--destaque);
 }
 
-.apresentacao__conteudo__paragrafo{
+.apresentacao__conteudo__paragrafo {
     font-family: var(--font--textos);
-    font-size:1.5rem;
+    font-size: 1.5rem;
     line-height: 1.5;
+    text-align: justify;
 }
 
 .apresentacao__conteudo__links {
@@ -72,13 +73,14 @@ body{
     flex-wrap: wrap;
 
 }
-.apresentacao__conteudo__links__texto{
+
+.apresentacao__conteudo__links__texto {
     font-family: var(--font--titulos);
     font-weight: 400;
     font-size: 1.125rem;
 }
 
-.apresentacao__conteudo__links__link{
+.apresentacao__conteudo__links__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,47 +97,89 @@ body{
     text-align: center;
 }
 
-.apresentacao__conteudo__links__link:hover{
+.apresentacao__conteudo__links__link:hover {
     background-color: var(--cor--background--hover);
 }
 
-footer{
+.apresentacao__about {
+    padding: 3% 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 80px;
+
+}
+
+.apresentacao__conteudo__about {
+    width: 100%;
+}
+
+.apresentacao__conteudo__about .curiosidades {
+    text-decoration: none;
+    font-family: var(--font--textos);
+    font-size: 1.3rem;
+    line-height: 1.5;
+    text-align: justify;
+    gap: 1.875rem;
+    font-weight: 700;
+    color: var(--cor--destaque--secundaria);
+
+}
+
+.apresentacao__conteudo__paragrafo__about {
+    font-family: var(--font--textos);
+    font-size: 1.4rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding-top: 2%;
+}
+
+.foto {
+    width: 60%;
+}
+
+footer {
     background-color: var(--cor--destaque);
     font-family: var(--font--textos);
     text-align: center;
-    font-size: 1.125rem;
+    font-size: 1rem;
     padding: 0.75rem;
 }
 
-.footer__instragram{
+.footer__instragram {
     text-decoration: none;
     color: var(--cor--textos);
 
 }
 
-.foto{
-    width: 75%;
-}
-
-@media (max-width: 1450px){
-    .cabecalho{
+@media (max-width: 1450px) {
+    .cabecalho {
         padding: 5%;
     }
-    .cabecalho__menu{
+
+    .cabecalho__menu {
         justify-content: center;
         padding-left: 0px;
     }
-    .apresentacao{
+
+    .apresentacao {
         flex-direction: column-reverse;
     }
-    .apresentacao__conteudo{
+
+    .apresentacao__conteudo {
         width: auto;
     }
-    .apresentacao__conteudo__links{
+
+    .apresentacao__conteudo__titulo {
+        text-align: center;
+    }
+
+    .apresentacao__conteudo__links {
         flex-direction: column;
     }
 
-    .apresentacao__conteudo__links__link{
+    .apresentacao__conteudo__links__link {
         width: 75%;
     }
 
