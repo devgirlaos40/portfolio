@@ -21,6 +21,14 @@ body {
     color: var(--cor--textos);
 }
 
+h3 {
+    font-family: var(--font--textos);
+    font-size: 1.04rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
 .cabecalho__menu {
     display: flex;
     justify-content: center;
@@ -63,8 +71,16 @@ body {
     width: 60%;
     display: flex;
     flex-direction: column;
+    gap: 1.875rem;    
+}
+
+.apresentacao__conteudo_about {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
     gap: 1.875rem;
 }
+    
 
 .apresentacao__conteudo__titulo {
     font-family: var(--font--titulos);
@@ -77,9 +93,8 @@ body {
 
 .apresentacao__conteudo__paragrafo {
     font-family: var(--font--textos);
-    font-size: 1.04rem;
+    font-size: .8rem;
     line-height: 1.5;
-    text-align: justify;
     text-align: justify;
 }
 
@@ -121,6 +136,18 @@ body {
     text-shadow: .8px .8px #948f5e;
 }
 
+.cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card{
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 16px;
+
+}
 
 footer {
     background-color: var(--cor--destaque--secundaria);
